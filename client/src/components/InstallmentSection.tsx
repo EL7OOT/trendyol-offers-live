@@ -86,15 +86,15 @@ export const InstallmentSection: React.FC = () => {
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">ادفع على دفعات بدون فوائد</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tamara.desc1')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">موافقة فورية وسهلة</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tamara.desc2')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">دفع آمن وموثوق</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tamara.desc3')}</span>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ export const InstallmentSection: React.FC = () => {
               }}
               className="w-full bg-gradient-to-r from-[#F27A1A] to-[#FF8C42] text-white font-cairo font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-base"
             >
-              ابدأ الآن مع تمارا
+              {t('installment.tamara.cta')}
             </button>
           </motion.div>
 
@@ -143,15 +143,15 @@ export const InstallmentSection: React.FC = () => {
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">قسط مشترياتك بسهولة</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tabby.desc1')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">بدون رسوم إضافية</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tabby.desc2')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-[#F27A1A] flex-shrink-0 mt-0.5" />
-                <span className="font-cairo text-sm text-gray-600">دفع آمن وسريع</span>
+                <span className="font-cairo text-sm text-gray-600">{t('installment.tabby.desc3')}</span>
               </div>
             </div>
 
@@ -173,7 +173,7 @@ export const InstallmentSection: React.FC = () => {
               }}
               className="w-full bg-gradient-to-r from-[#F27A1A] to-[#FF8C42] text-white font-cairo font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-base"
             >
-              ابدأ الآن مع تابي
+              {t('installment.tabby.cta')}
             </button>
           </motion.div>
         </motion.div>

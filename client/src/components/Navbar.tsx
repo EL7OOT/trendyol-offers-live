@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
-  const { language, setLanguage, isArabic } = useLanguage();
+  const { language, setLanguage, isArabic, t } = useLanguage();
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
-            العربية
+            {t('nav.arabic')}
           </button>
           <button
             onClick={() => setLanguage('en')}
@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
                 : 'bg-gray-100 text-gray-700'
             }`}
           >
-            العربية
+            {t('nav.arabic')}
           </button>
           <button
             onClick={() => {

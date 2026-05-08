@@ -111,7 +111,7 @@ export const FAQSection: React.FC = () => {
         >
           <div className="bg-gradient-to-r from-[#F27A1A]/10 to-[#8B5CF6]/10 rounded-2xl p-8 border border-[#F27A1A]/20">
             <p className="font-arabic-body text-gray-700 mb-4">
-              هل لديك سؤال آخر؟ تواصل معنا عبر WhatsApp
+              {t('faq.more_questions')}
             </p>
             <a
               href="https://wa.me/966510554765"
@@ -119,7 +119,7 @@ export const FAQSection: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-block bg-[#25D366] text-white font-cairo font-semibold py-3 px-8 rounded-lg hover:bg-[#20BA58] transition-all duration-300 transform hover:scale-105"
             >
-              📱 تواصل معنا الآن
+              {t('faq.contact_now')}
             </a>
           </div>
         </motion.div>

@@ -160,7 +160,7 @@ export const ReviewsSection: React.FC = () => {
                         <p className="font-cairo font-semibold text-gray-800 text-sm sm:text-base">
                           {isArabic ? review.name : review.nameEn}
                         </p>
-                        <p className="text-xs text-gray-500">عميل موثوق</p>
+                        <p className="text-xs text-gray-500">{t('reviews.verified')}</p>
                       </div>
                     </div>
                   </motion.div>

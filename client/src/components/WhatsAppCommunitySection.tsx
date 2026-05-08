@@ -102,7 +102,7 @@ export const WhatsAppCommunitySection: React.FC = () => {
                 </button>
 
                 <p className="font-cairo text-xs text-white/80 text-center">
-                  ✓ آمن وسهل الاستخدام • لا تحتاج لأي بيانات
+                  {t('whatsapp.community.badge')}
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export const WhatsAppCommunitySection: React.FC = () => {
 
             {/* Trust Info */}
             <p className="font-cairo text-sm text-gray-600 mt-6">
-              ✓ انضم الآن واحصل على أحدث العروض والكوبونات أول بأول
+              {t('whatsapp.community.footer')}
             </p>
           </motion.div>
         </div>

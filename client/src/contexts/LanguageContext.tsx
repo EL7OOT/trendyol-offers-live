@@ -132,6 +132,27 @@ const translations: Record<string, Record<Language, string>> = {
   // Notifications
   'notification.copied': { ar: 'تم نسخ الكود بنجاح! ✓', en: 'Code copied successfully! ✓' },
   'notification.error': { ar: 'حدث خطأ ما. حاول مرة أخرى.', en: 'Something went wrong. Please try again.' },
+
+  // Additional Missing Translations
+  'reviews.verified': { ar: 'عميل موثوق', en: 'Verified Customer' },
+  'whatsapp.button.text': { ar: 'تواصل معنا', en: 'Contact Us' },
+  'footer.quick_links': { ar: 'روابط سريعة', en: 'Quick Links' },
+  'footer.contact_us': { ar: 'تواصل معنا', en: 'Contact Us' },
+  'about.stats.orders': { ar: 'طلب مكتمل', en: 'Completed Orders' },
+  'about.stats.happy': { ar: 'عميل سعيد', en: 'Happy Customers' },
+  'about.stats.rating': { ar: 'تقييم', en: 'Rating' },
+  'faq.more_questions': { ar: 'هل لديك سؤال آخر؟ تواصل معنا عبر WhatsApp', en: 'Have another question? Contact us via WhatsApp' },
+  'faq.contact_now': { ar: '📱 تواصل معنا الآن', en: '📱 Contact Us Now' },
+  'installment.tamara.desc1': { ar: 'ادفع على دفعات بدون فوائد', en: 'Pay in installments without interest' },
+  'installment.tamara.desc2': { ar: 'موافقة فورية وسهلة', en: 'Instant and easy approval' },
+  'installment.tamara.desc3': { ar: 'دفع آمن وموثوق', en: 'Safe and reliable payment' },
+  'installment.tamara.cta': { ar: 'ابدأ الآن مع تمارا', en: 'Start now with Tamara' },
+  'installment.tabby.desc1': { ar: 'قسط مشترياتك بسهولة', en: 'Split your payments easily' },
+  'installment.tabby.desc2': { ar: 'بدون رسوم إضافية', en: 'No extra fees' },
+  'installment.tabby.desc3': { ar: 'دفع آمن وسريع', en: 'Safe and fast payment' },
+  'installment.tabby.cta': { ar: 'ابدأ الآن مع تابي', en: 'Start now with Tabby' },
+  'whatsapp.community.badge': { ar: '✓ آمن وسهل الاستخدام • لا تحتاج لأي بيانات', en: '✓ Safe and easy to use • No data required' },
+  'whatsapp.community.footer': { ar: '✓ انضم الآن واحصل على أحدث العروض والكوبونات أول بأول', en: '✓ Join now and get the latest offers and coupons instantly' },
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

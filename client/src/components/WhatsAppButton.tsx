@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useConversion } from '@/hooks/useConversion';
 
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export const WhatsAppButton: React.FC = () => {
   const { openWhatsApp } = useConversion();
+  const { t } = useLanguage();
 
   return (
     <motion.button
@@ -33,7 +36,7 @@ export const WhatsAppButton: React.FC = () => {
 
       {/* Tooltip */}
       <div className="absolute bottom-full right-0 mb-3 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-        تواصل معنا
+        {t('whatsapp.button.text')}
       </div>
     </motion.button>
   );

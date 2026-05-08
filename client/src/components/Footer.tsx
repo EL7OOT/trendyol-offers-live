@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-arabic-headline font-bold text-lg mb-4">روابط سريعة</h3>
+            <h3 className="font-arabic-headline font-bold text-lg mb-4">{t('footer.quick_links')}</h3>
             <ul className="space-y-3">
               {footerLinks.map((link, idx) => (
                 <li key={idx}>
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-arabic-headline font-bold text-lg mb-4">تواصل معنا</h3>
+            <h3 className="font-arabic-headline font-bold text-lg mb-4">{t('footer.contact_us')}</h3>
             <div className="space-y-3">
               <a
                 href="https://wa.me/966510554765"

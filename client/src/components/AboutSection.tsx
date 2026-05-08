@@ -59,9 +59,9 @@ export const AboutSection: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               {[
-                { number: '+500', label: 'طلب مكتمل', labelEn: 'Orders' },
-                { number: '+300', label: 'عميل سعيد', labelEn: 'Customers' },
-                { number: '4.9/5', label: 'تقييم', labelEn: 'Rating' },
+                { number: '+500', label: t('about.stats.orders') },
+                { number: '+300', label: t('about.stats.happy') },
+                { number: '4.9/5', label: t('about.stats.rating') },
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
