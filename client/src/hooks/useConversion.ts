@@ -3,7 +3,7 @@ import { toast } from 'sonner';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const COUPON_CODE = 'ALAMLFW';
-const AFFILIATE_LINK = 'https://ty.gl/lskrjljpg2ev7';
+const AFFILIATE_LINK = 'https://ty.gl/5hyfobztm2xbr';
 const WHATSAPP_LINK = 'https://wa.me/966510554765';
 const WHATSAPP_COMMUNITY_LINK = 'https://chat.whatsapp.com/GTJW19b5FmL3W6nzV0LIV6?mode=gi_t';
 

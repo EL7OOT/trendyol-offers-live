@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CheckCircle, CreditCard } from 'lucide-react';
+import { useConversion } from '@/hooks/useConversion';
 
 export const InstallmentSection: React.FC = () => {
   const { t, isArabic } = useLanguage();
+  const { copyAndRedirect } = useConversion();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -100,20 +102,7 @@ export const InstallmentSection: React.FC = () => {
 
             {/* CTA Button */}
             <button
-              onClick={() => {
-                const copyAndRedirect = async () => {
-                  try {
-                    await navigator.clipboard.writeText('ALAMLFW');
-                    setTimeout(() => {
-                      window.open('https://ty.gl/lskrjljpg2ev7', '_blank');
-                    }, 500);
-                  } catch (error) {
-                    console.error('Failed to copy:', error);
-                    window.open('https://ty.gl/lskrjljpg2ev7', '_blank');
-                  }
-                };
-                copyAndRedirect();
-              }}
+              onClick={() => copyAndRedirect()}
               className="w-full bg-gradient-to-r from-[#F27A1A] to-[#FF8C42] text-white font-cairo font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-base"
             >
               {t('installment.tamara.cta')}
@@ -157,20 +146,7 @@ export const InstallmentSection: React.FC = () => {
 
             {/* CTA Button */}
             <button
-              onClick={() => {
-                const copyAndRedirect = async () => {
-                  try {
-                    await navigator.clipboard.writeText('ALAMLFW');
-                    setTimeout(() => {
-                      window.open('https://ty.gl/lskrjljpg2ev7', '_blank');
-                    }, 500);
-                  } catch (error) {
-                    console.error('Failed to copy:', error);
-                    window.open('https://ty.gl/lskrjljpg2ev7', '_blank');
-                  }
-                };
-                copyAndRedirect();
-              }}
+              onClick={() => copyAndRedirect()}
               className="w-full bg-gradient-to-r from-[#F27A1A] to-[#FF8C42] text-white font-cairo font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-base"
             >
               {t('installment.tabby.cta')}
